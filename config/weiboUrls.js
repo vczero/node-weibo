@@ -13,6 +13,11 @@ var weiUrls={
         "host":"api.weibo.com",
         "path":"/2/statuses/",
         "protocol":"https://"
+    },
+    "comments":{
+        "host":"api.weibo.com",
+        "path":"/2/comments/",
+        "protocol":"https://"
     }
 };
 
