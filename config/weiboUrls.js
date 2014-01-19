@@ -38,6 +38,11 @@ var weiUrls={
         "host":"api.weibo.com",
         "path":"/2/account/",
         "protocol":"https://"
+    },
+    "favorites":{
+        "host":"api.weibo.com",
+        "path":"/2/favorites/",
+        "protocol":"https://"
     }
 };
 
