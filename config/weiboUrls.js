@@ -43,6 +43,46 @@ var weiUrls={
         "host":"api.weibo.com",
         "path":"/2/favorites/",
         "protocol":"https://"
+    },
+    "tags":{
+        "host":"api.weibo.com",
+        "path":"/2/tags/",
+        "protocol":"https://"
+    },
+    "register":{
+        "host":"api.weibo.com",
+        "path":"/2/register/",
+        "protocol":"https://"
+    },
+    "search":{
+        "host":"api.weibo.com",
+        "path":"/2/search/",
+        "protocol":"https://"
+    },
+    "suggestions":{
+        "host":"api.weibo.com",
+        "path":"/2/suggestions/",
+        "protocol":"https://"
+    },
+    "remind":{
+        "host":"api.weibo.com",
+        "path":"/2/remind/",
+        "protocol":"https://"
+    },
+    "short_url":{
+        "host":"api.weibo.com",
+        "path":"/2/short_url/",
+        "protocol":"https://"
+    },
+    "notification":{
+        "host":"api.weibo.com",
+        "path":"/2/notification/",
+        "protocol":"https://"
+    },
+    "common":{
+        "host":"api.weibo.com",
+        "path":"/2/common/",
+        "protocol":"https://"
     }
 };
 
