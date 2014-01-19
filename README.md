@@ -47,6 +47,16 @@ http.createServer(function(request,response){
     });   
     response.end('Hello World\n');   
 }).listen('3000','localhost');   
-```
+```  
+####四、新浪微博APP开发须知      
+1、注册个人的新浪微博账号  
+2、登录新浪微博、开放平台：http://open.weibo.com/   
+3、申请AppKey步骤       
+####(1)登录平台，选择其中一种应用方式   
+![Alt text](1.png)          
+####(2)创建应用，按要求填写相关信息   
+![Alt text](2.png)     
+####(3)管理应用和查看基本信息        
+![Alt text](3.png)     
 
 
