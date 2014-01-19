@@ -18,6 +18,16 @@ var weiUrls={
         "host":"api.weibo.com",
         "path":"/2/comments/",
         "protocol":"https://"
+    },
+    "users":{
+        "host":"api.weibo.com",
+        "path":"/2/users/",
+        "protocol":"https://"
+    },
+    "trends":{
+        "host":"api.weibo.com",
+        "path":"/2/trends/",
+        "protocol":"https://"
     }
 };
 
