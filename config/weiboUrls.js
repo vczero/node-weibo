@@ -28,6 +28,16 @@ var weiUrls={
         "host":"api.weibo.com",
         "path":"/2/trends/",
         "protocol":"https://"
+    },
+    "friendships":{
+        "host":"api.weibo.com",
+        "path":"/2/friendships/",
+        "protocol":"https://"
+    },
+    "account":{
+        "host":"api.weibo.com",
+        "path":"/2/account/",
+        "protocol":"https://"
     }
 };
 
