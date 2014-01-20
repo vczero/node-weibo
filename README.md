@@ -11,9 +11,9 @@ nodeweibo
 2、request库(npm install request)   
 ####二、API说明
 所有API都是按照新浪微博.开放平台开发的。   
-![Alt text](../imgs/weibo.png)     
+![Alt text](weibo.png)     
 主要规则为：
-![Alt text](../imgs/api.png)      
+![Alt text](api.png)      
 如上图：    
 1、如标号1所示，statuses为命名空间；在statuses命名空间下全部为微博的相关接口。    
 2、比如，想调用statuses/home_timeline,可以引入命名空间，statuses.home_timeline。       
@@ -54,10 +54,10 @@ http.createServer(function(request,response){
 2、登录新浪微博、开放平台：http://open.weibo.com/   
 3、申请AppKey步骤       
 ####(1)登录平台，选择其中一种应用方式   
-![Alt text](../imgs/1.png)          
+![Alt text](1.png)          
 ####(2)创建应用，按要求填写相关信息   
-![Alt text](../imgs/2.png)     
+![Alt text](2.png)     
 ####(3)管理应用和查看基本信息        
-![Alt text](../imgs/3.png)     
+![Alt text](3.png)     
 
 
