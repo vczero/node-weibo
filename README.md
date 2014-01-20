@@ -9,6 +9,10 @@ nodeweibo
 ####一、环境要求
 1、Node.js平台   
 2、request库(npm install request)   
+3、安装(地理信息接口暂未封装)     
+```    
+npm install nodeweibo    
+``` 
 ####二、API说明
 所有API都是按照新浪微博.开放平台开发的。   
 ![Alt text](weibo.png)     
