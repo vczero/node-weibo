@@ -24,7 +24,13 @@ npm install nodeweibo
 1、如标号1所示，statuses为命名空间；在statuses命名空间下全部为微博的相关接口。    
 2、比如，想调用statuses/home_timeline,可以引入命名空间，statuses.home_timeline。       
 3、如果如标号3所示，则为statuses.user_timeline_ids(将“/”改为“_”即可)。   
-三、example     
+三、example
+提供测试的：
+```
+"client_id":"4263807830"
+"client_secret":"f314a703b2586510ae62a8baaef1570e"
+"redirect_uri":"127.0.0.1:3000"
+```  
 ```    
 var http=require('http');    
 var url=require('url');    
