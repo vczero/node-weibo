@@ -11,7 +11,7 @@ nodeweibo
 2、request库(npm install request)   
 3、安装
 ```    
-npm install nodeweibo@0.0.3   
+npm install nodeweibo@0.0.4      
 或者   
 npm install nodeweibo  
 ``` 
