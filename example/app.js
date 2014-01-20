@@ -9,10 +9,10 @@ http.createServer(function(request,response){
     var myurl=url.parse(request.url,true);
     var options_access_token={
         "code":myurl.query.code,
-        "client_id":"4263807830",
-        "client_secret":"f314a703b2586510ae62a8baaef1570e",
+        "client_id":"your client_id",
+        "client_secret":"your client_secret",
         "grant_type":"authorization_code",
-        "redirect_uri":"127.0.0.1:3000"
+        "redirect_uri":"your redirect_uri"
     };
     oauth2.access_token(options_access_token,function(data){
         console.log(data);
