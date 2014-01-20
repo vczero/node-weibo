@@ -23,11 +23,11 @@ npm install nodeweibo
 2、比如，想调用statuses/home_timeline,可以引入命名空间，statuses.home_timeline。       
 3、如果如标号3所示，则为statuses.user_timeline_ids(将“/”改为“_”即可)。   
 三、example     
-```
-var http=require('http');   
-var url=require('url');   
-var oauth2=require('../lib/oauth2');//引入oauth2对象   
-
+```    
+var http=require('http');    
+var url=require('url');    
+var oauth2=require('nodeweibo/lib/oauth2');//引入oauth2对象      
+ 
 oauth2.authorize();//启动认证   
 http.createServer(function(request,response){   
     response.writeHead(200, {'Content-Type': 'text/plain'});   
