@@ -83,6 +83,11 @@ var weiUrls={
         "host":"api.weibo.com",
         "path":"/2/common/",
         "protocol":"https://"
+    },
+    "location":{
+        "host":"api.weibo.com",
+        "path":"/2/location/",
+        "protocol":"https://"
     }
 };
 
