@@ -11,9 +11,9 @@ nodeweibo
 2、request库(npm install request)   
 3、安装
 ```    
-npm install nodeweibo@0.0.3
-或者
-npm install nodeweibo
+npm install nodeweibo@0.0.3   
+或者   
+npm install nodeweibo  
 ``` 
 ####二、API说明
 所有API都是按照新浪微博.开放平台开发的。   
