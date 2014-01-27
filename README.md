@@ -70,6 +70,8 @@ http.createServer(function(request,response){
 ####(2)创建应用，按要求填写相关信息   
 ![Alt text](2.png)     
 ####(3)管理应用和查看基本信息        
-![Alt text](3.png)     
+![Alt text](3.png)          
+####(4)运用nodeweibo开发的一个小应用截图，具体的代码在mostvalue中：https://github.com/vczero/mostvalue   
+![Alt text](example.png)   
 
 
