@@ -25,7 +25,7 @@ function authorize(client_id,redirect_uri){
         path=url+'authorize?client_id='+client_id
             +'^&redirect_uri='+redirect_uri;
     }
-	console.log(path);
+	
     child_pro.exec('start '+path);
 }
 
