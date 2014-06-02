@@ -5,7 +5,9 @@ var child_pro = require('child_process'),
   setting = require('./config/setting.json'),
   urlconfig = require('./config/config.json');
     
-var Weibo = {};	
+var Weibo = {};
+
+//Weito添加类	
 (function(){
   var paras = urlconfig;
   Weibo.appKey = {
@@ -42,6 +44,7 @@ var Weibo = {};
 	var funcBody = urlconfig[name];
 	Weibo[name] = {};
 	for(var index in funcBody){
+	  //Weibo命名空间下的类添加静态函数
 	  Weibo[name][funcBody[index].func] = createFunc(funcBody[index]);
 	}
   }
@@ -82,7 +85,7 @@ var Weibo = {};
 })();
 
 
-
+Weibo.OAuth2.access_token();
 
 
 
