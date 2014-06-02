@@ -1,29 +1,23 @@
 
 var child_pro = require('child_process');
-// var json = {
-	// "appKey":"4263807830",
- //    "appSecret":"f314a703b2586510ae62a8baaef1570e",
- //    "redirectUrl":"127.0.0.1:3000"
-// };
+var setting = require('./config/setting.json');
 
 
 var Weibo = (function(){
-	var Weibo = {};
-		
+	var Weibo = {};	
 	//配置文件key
 	Weibo.appKey = {
-		"appKey":"4263807830",
-    	"appSecret":"f314a703b2586510ae62a8baaef1570e",
-    	"redirectUrl":"127.0.0.1:3000"
+		"appKey":setting.appKey,
+    	"appSecret":setting.appSecret,
+    	"redirectUrl":setting.redirectUrl
 	};
-
 	//设置GET参数
 	Weibo.getGetURL = function(paras){
 		var arr = [];
 		for(var key in paras){
 			arr.push(key + '=' + paras[key]);
 		}
-		var path = 'client_id=' + Weibo.appKey.appKey + '&redirect_uri='
+		var path = '?client_id=' + Weibo.appKey.appKey + '&redirect_uri='
 		           + Weibo.appKey.redirectUrl;
 		return path + arr.join('&');
 	};
@@ -35,7 +29,13 @@ var Weibo = (function(){
 		paras.client_id = Weibo.appKey.appKey;
 		paras.redirect_uri = Weibo.appKey.redirectUrl;
 		return paras;
-	}
+	};
+
+	//启动认证
+	Weibo.authorize = function(){
+		var path = 'https://api.weibo.com/oauth2/authorize' + Weibo.getGetURL().replace('&','^&');
+		child_pro.exec('start '+path);
+	};
 
 	var paras = [
 		{
@@ -79,12 +79,7 @@ var Weibo = (function(){
 })();
 
 
-// console.log(new Weibo.author);
-// console.log(new Weibo.Test);
-var Test = Weibo.Test;
-// console.log(Test.authorize());
 
-// console.log(Weibo.appKey_get);
 
-console.log(Weibo.getGetURL());
-console.log(Weibo.getPostURL());
+Weibo.authorize();
+
