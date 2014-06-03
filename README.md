@@ -6,18 +6,34 @@ node-weibo v2.0说明
 说明和接口正在完善中，预计最近2天完成
 
 
-####快速开始
+
+####API使用说明
 ```
-var Weibo = require('./Weibo');
+(1)阅读新浪微博的API文档：http://open.weibo.com/wiki/%E5%BE%AE%E5%8D%9AAPI
+(2)Weibo是整个命名空间，请配置conifg->setting.json文件.
+(3)比如1：需要使用“OAuth2授权接口”，点击链接到页面底部，看到“OAuth2”，那么
+   OAuth2就是一个类，即Weibo.OAuth2.
+   则Weibo.OAuth2的获取access_token的方法是：Weibo.OAuth2.access_token;
+   则授权查询是：Weibo.OAuth2.get_token_info.
+   比如2：需要使用“微博接口”,那么该类的名称是Statuses.
+   则返回最新的公共微博是：public_timeline.
+   整个方法的调用是Weibo.Statuses.public_timeline.
+
+   所有类和函数命名方式尊重新浪微博API方式，以此类推.
+(4)所有方法两个参数，第一参数是该接口的参数(json对象格式，不含conifg->setting.json中的配置参数)
+``` 
+####example说明
+```
 /*
 +-------------------------------------------------
 (1)注册账号：http://open.weibo.com/
 (2)在config->setting.json中配置您的开发账号。
 (3)搞清楚微博的认证机制即oauth2.0认证原理。
-(4)第3点很重要，确保你理解这种开放方式。
+(4)第3点很重要，确保你理解这种开发方式。
 +-------------------------------------------------
 */
 
+var Weibo = require('./Weibo');
 
 /*
 +-------------------------------------------------
@@ -28,7 +44,6 @@ var Weibo = require('./Weibo');
 */
 
 Weibo.authorize();
-
 
 /*
 +--------------------------------------------------
@@ -42,6 +57,7 @@ Weibo.authorize();
 		会随着认证不断更新。一个用户一个access_token。
 +---------------------------------------------------
 */
+
 var jsonParas = {
 	code:"the value of your browser's parameter code",
 	grant_type:"authorization_code"
