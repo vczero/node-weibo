@@ -5,6 +5,8 @@ node-weibo
 node-weibo v2.0说明       
 说明和接口正在完善中，预计最近2天完成
 
+
+####快速开始
 ```
 var Weibo = require('./Weibo');
 /*
