@@ -1,8 +1,3 @@
-nodeweibo
-=========
-node-weibo
-
-
 
 var Weibo = require('./Weibo');
 
@@ -48,4 +43,3 @@ var jsonParas = {
 Weibo.OAuth2.access_token(jsonParas,function(data){
 	console.log(data);
 });
-
