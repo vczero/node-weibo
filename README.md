@@ -10,7 +10,7 @@ node-weibo v2.0说明
 (1)阅读新浪微博的API文档：http://open.weibo.com/wiki/%E5%BE%AE%E5%8D%9AAPI
 (2)Weibo是整个命名空间，请配置conifg->setting.json文件.
 ``` 
-![weibo API 说明](weibo.jpg) 
+![weibo API](./weibo.jpg) 
 ``` 
 (3)请求授权接口作为单独的接口，即在Weibo的命名空间下Weibo.authorize();
 (4)浏览：http://open.weibo.com/wiki/%E5%BE%AE%E5%8D%9AAPI     
