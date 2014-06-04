@@ -5,16 +5,16 @@ node-weibo
 node-weibo v2.0说明       
 说明和接口正在完善中，预计最近2天完成
 
-
-
 ####一、API使用说明
 ```
 (1)阅读新浪微博的API文档：http://open.weibo.com/wiki/%E5%BE%AE%E5%8D%9AAPI
 (2)Weibo是整个命名空间，请配置conifg->setting.json文件.
+``` 
+![weibo API 说明](./weibo.png) 
+``` 
 (3)请求授权接口作为单独的接口，即在Weibo的命名空间下Weibo.authorize();
-(4)浏览：http://open.weibo.com/wiki/%E5%BE%AE%E5%8D%9AAPI
-   ![weibo API 说明](./weibo.png)      
-   如图所示，是API的命名方式.
+(4)浏览：http://open.weibo.com/wiki/%E5%BE%AE%E5%8D%9AAPI     
+   如上图所示，是API的命名方式.
    +---------
    比如1：需要使用“OAuth2授权接口”，点击链接到页面底部，看到“OAuth2”，那么OAuth2就是一个类，即Weibo.OAuth2.
    则Weibo.OAuth2的获取access_token的方法是：Weibo.OAuth2.access_token;
