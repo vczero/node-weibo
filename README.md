@@ -79,5 +79,18 @@ Weibo.OAuth2.access_token(jsonParas,function(data){
 	console.log(data);
 });
 
+```
+
+####三、测试appkey
+(1)如需开发，请将setting.json的appKey、appSecret、redirectUrl换成微博开放平台的开发者账号信息。           
+(2)提供appkey仅为测试所有，勿用于实际开发，否则我更改了账号信息会影响您的应用正常使用。        
+(3)测试的应用信息如下。       
+```  
+{
+    "appKey":"4263807830",
+    "appSecret":"f314a703b2586510ae62a8baaef1570e",
+    "redirectUrl":"127.0.0.1:3000"
+}
+
 ```  
 
