@@ -1,5 +1,5 @@
 
-var Weibo = require('./Weibo');
+var Weibo = require('nodeweibo');
 
 
 /*

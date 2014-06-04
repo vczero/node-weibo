@@ -1,28 +1,27 @@
 {
   "name": "nodeweibo",
-  "version": "2.0",
+  "version": "2.0.1",
   "description": "新浪微博OAuth2接口封装，基于Node.js平台(package Weibo API base on Node.js)",
-  "main": "Weibo.js",
-  "dependencies": {
-    
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "example": "examples"
   },
-  "maintainers": [  
-     {  
-        "name": "vczero",  
-        "email": "wlhmyit@126.com",  
-     }  
-  ], 
-  "devDependencies": {},
   "scripts": {
     "test": "example.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vczero/nodeweibo.git"
+    "url": "https://github.com/vczero/node-weibo.git"
+  },
+  "author": "vczero",
+  "license": "Apache Licence 2.0",
+  "bugs": {
+    "url": "https://github.com/vczero/node-weibo/issues"
   },
   "keywords": [
     "weibo",
-    "weibo oauth2"
+    "weibo oauth2",
     "OAuth2",
     "Node.js",
     "Node-weibo",
@@ -30,14 +29,9 @@
     "node-weibo",
     "node weibo",
     "weibo node",
-    "weibo-node"
+    "weibo-node",
     "weibonode",
     "weiboNode"
   ],
-  "author": "vczero",
-  "license": "none",
-  "bugs": {
-    "url": "https://github.com/vczero/nodeweibo/issues"
-  },
-  "homepage": "https://github.com/vczero/nodeweibo"
+  "homepage": "https://github.com/vczero/node-weibo"
 }
