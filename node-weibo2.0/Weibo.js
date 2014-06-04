@@ -96,7 +96,6 @@ var Weibo = {};
 })();
 
 
-
 module.exports = Weibo;
 
 
