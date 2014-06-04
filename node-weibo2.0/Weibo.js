@@ -96,15 +96,7 @@ var Weibo = {};
 })();
 
 
-// Weibo.authorize();
-// var xx = {
-// 	code:"6a5ed965c923fbfc0c04017592735911",
-// 	grant_type:"authorization_code"
-// };
 
-// Weibo.OAuth2.access_token(xx,function(data){
-// 	console.log(data);
-// });
 module.exports = Weibo;
 
 

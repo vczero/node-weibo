@@ -15,7 +15,7 @@
 			"rmethod":["POST"]
 		}
 	],
-	"statuses":[
+	"Statuses":[
 		{
 			"func":"public_timeline",
 			"host":"https://api.weibo.com",
@@ -26,6 +26,18 @@
 			"func":"friends_timeline",
 			"host":"https://api.weibo.com",
 			"path":"/2/statuses/friends_timeline.json",
+			"rmethod":["GET"]
+		},
+		{
+			"func":"home_timeline",
+			"host":"https://api.weibo.com",
+			"path":"/2/statuses/home_timeline.json",
+			"rmethod":["GET"]
+		},
+		{
+			"func":"friends_timeline_ids",
+			"host":"https://api.weibo.com",
+			"path":"/2/statuses/friends_timeline/ids.json",
 			"rmethod":["GET"]
 		}
 	]
