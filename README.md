@@ -12,8 +12,8 @@ node-weibo v2.0 是对新浪微博的API的封装，基于Node.js，认证方式
 
 ####一、API使用说明
 ```
-(1)阅读新浪微博的API文档：http://open.weibo.com/wiki/%E5%BE%AE%E5%8D%9AAPI
-(2)Weibo是整个命名空间，请配置conifg->setting.json文件.
+(1)阅读新浪微博的API文档 http://open.weibo.com/wiki/%E5%BE%AE%E5%8D%9AAPI
+(2)Weibo是整个命名空间，使用前请参考 examples/setting.json 创建/修改配置文件。
 ``` 
 ![weibo API](./doc/weibo.jpg) 
 ``` 
@@ -35,20 +35,24 @@ node-weibo v2.0 是对新浪微博的API的封装，基于Node.js，认证方式
    +---------
 
    所有类和函数命名方式尊重新浪微博API方式，以此类推.
-(5)所有方法两个参数，第一参数是该接口的参数(json对象格式，不含conifg->setting.json中的配置参数)
+(5)所有方法两个参数，第一参数是该接口的参数(json对象格式，不含setting.json中的配置参数)
 ``` 
 ####二、example说明
 ```
 /*
 +-------------------------------------------------
 (1)注册账号：http://open.weibo.com/
-(2)在config->setting.json中配置您的开发账号。
+(2)参考 examples/setting.json 创建/修改配置文件。
 (3)搞清楚微博的认证机制即oauth2.0认证原理。
 (4)第3点很重要，确保你理解这种开发方式。
 +-------------------------------------------------
 */
 
 var Weibo = require('nodeweibo');
+var setting = require('path/to/setting.json');
+
+// 首次调用接口前需初始化Weibo类，传入配置信息 (appKey, appSecret, redirect_url, etc. )
+Weibo.init(setting);
 
 /*
 +-------------------------------------------------
@@ -80,6 +84,27 @@ var jsonParas = {
 
 Weibo.OAuth2.access_token(jsonParas,function(data){
 	console.log(data);
+});
+
+/*
++--------------------------------------------------
+例3：调用API
+(1)阅读微博开放平台API
+   如：http://open.weibo.com/wiki/2/statuses/user_timeline，
+   将必要的参数写进jsonParas对象。
+(2)在回调中打印出获取的数据
++---------------------------------------------------
+*/
+
+// 设置请求参数
+var jsonParas = {
+    "source": Weibo.appKey.appKey,
+    "access_token": 'CLIENT_ACCESS_TOKEN_HERE'
+};
+
+// 调用API
+Weibo.Statuses.user_timeline(jsonParas, function(data){
+    console.log(data);
 });
 
 ```
