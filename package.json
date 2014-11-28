@@ -1,6 +1,6 @@
 {
   "name": "nodeweibo",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "新浪微博OAuth2接口封装，基于Node.js平台(package Weibo API base on Node.js)",
   "main": "nodeweibo.js",
   "directories": {
