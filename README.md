@@ -14,7 +14,7 @@ node-weibo v2.0 是对新浪微博的API的封装，基于Node.js，认证方式
 ```
 (1)阅读新浪微博的API文档 http://open.weibo.com/wiki/%E5%BE%AE%E5%8D%9AAPI
 (2)Weibo是整个命名空间，使用前请参考 examples/setting.json 创建/修改配置文件。
-``` 
+```
 ![weibo API](./doc/weibo.jpg) 
 ``` 
 (3)请求授权接口作为单独的接口，即在Weibo的命名空间下Weibo.authorize();
@@ -119,6 +119,7 @@ Weibo.Statuses.user_timeline(jsonParas, function(data){
     "appSecret":"f314a703b2586510ae62a8baaef1570e",
     "redirectUrl":"127.0.0.1:3000"
 }
-
 ```  
 
+####四、其他文档
+* [目前支持的API列表](doc/doc.md)
