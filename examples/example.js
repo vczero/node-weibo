@@ -1,6 +1,6 @@
 
-var Weibo = require('../../node-weibo');    // require('nodeweibo') also works if you have installed nodeweibo via npm
-var setting = require('./setting.json')     // get setting (appKey, appSecret, etc.)
+var Weibo = require('../../nodeweibo');    // require('nodeweibo') also works if you have installed nodeweibo via npm
+var setting = require('./setting.json');   // get setting (appKey, appSecret, etc.)
 
 /*
 +-------------------------------------------------
