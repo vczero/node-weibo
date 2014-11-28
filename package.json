@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/vczero/node-weibo.git"
   },
-  "author": "vczero",
+  "author": "vczero, xizhonghua",
   "license": "Apache Licence 2.0",
   "bugs": {
     "url": "https://github.com/vczero/node-weibo/issues"
@@ -33,5 +33,8 @@
     "weibonode",
     "weiboNode"
   ],
-  "homepage": "https://github.com/vczero/node-weibo"
+  "homepage": "https://github.com/vczero/node-weibo",
+  "dependencies": {
+	"open": "*"
+  }
 }
