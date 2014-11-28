@@ -6,9 +6,8 @@ node-weibo v2.0 是对新浪微博的API的封装，基于Node.js，认证方式
 (2)更加高效和管理，尊重微博API的设计原则。            
 
 ####安装
-```
-npm install nodeweibo
-```
+#####npm install nodeweibo
+![weibo API](./doc/pak.png) 
 
 
 ####一、API使用说明
