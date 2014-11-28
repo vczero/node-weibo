@@ -122,4 +122,4 @@ Weibo.Statuses.user_timeline(jsonParas, function(data){
 ```  
 
 ####四、其他文档
-* [目前支持的API列表](doc/doc.md)
+* [目前支持的API列表](doc/api.md)
