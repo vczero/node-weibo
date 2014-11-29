@@ -1,4 +1,4 @@
-node-weibo 
+nodeweibo 
 =========
 node-weibo v2.0 是对新浪微博的API的封装，基于Node.js，认证方式采用OAuth2.      
 相对node-weibo v2.0之前版本的特性有：      
