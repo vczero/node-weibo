@@ -122,12 +122,7 @@ Weibo.Statuses.user_timeline(jsonParas, function(data){
 }
 ```  
 
-####四、其他文档
-* [目前支持的API列表](doc/api.md)   
-## nodeweibo Supported API
-
-generated on Fri Nov 28 2014 14:24:16 GMT-0500 (EST)
-
+####四、API文档
 ### OAuth2 class
 | function name | doc |
 | ------------- | --- |
